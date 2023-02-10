@@ -1,6 +1,8 @@
 package WPAPI;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
 import static io.restassured.RestAssured.*;
 import java.util.ArrayList;
 
@@ -57,14 +59,17 @@ public class MainPOSTLogic {
 	    String Filename=Utils.setMediaFileName();
 		String MediaUrl="https://wapiconnect.com/messages/media/"+Filename;
 		RestAssured.baseURI = "https://wapiconnect.com";
-		given().log().all().queryParam("group_id", GroupId).queryParam("type", "media")
+		String mediaresponse=  given().queryParam("group_id", GroupId).queryParam("type", "media")
 		.queryParam("message", "media demo message")
 		.queryParam("media_url", MediaUrl)
 		.queryParam("filename", Filename)
 		.queryParam("instance_id", InstanceId)
 		.queryParam("access_token", "11c91f56d57f6b121c22f6d18c968225")
 		.when().post("api/sendgroupmsg.php")
-		.then().log().all().assertThat().statusCode(200).extract().response().asString();
+		.then().assertThat().statusCode(200).extract().response().asString();
+		
+		
+		
 		
 	}
 	
@@ -73,11 +78,28 @@ public class MainPOSTLogic {
 	{
 			String message=Utils.setMessage();
 			RestAssured.baseURI = StringResources.Baseuri;
-			given().log().all().queryParam("group_id", GroupId).queryParam("type", "text")
+		String textresponse = given().queryParam("group_id", GroupId).queryParam("type", "text")
 			.queryParam("message", message)
 			.queryParam("instance_id", InstanceId)
 			.queryParam("access_token", StringResources.AccessToken)
 			.when().post("api/sendgroupmsg.php")
-			.then().log().all().assertThat().statusCode(200).extract().response().asString();
+			.then().assertThat().statusCode(200).extract().response().asString();
+			
+			JsonPath js=new JsonPath(textresponse);
+			
+			String statusresponse = js.getString("status");
+			System.out.println(statusresponse);
+			
+		    String messageresponse =	js.getString("message");
+		    System.out.println(messageresponse);
+		    
+		    if(statusresponse.equalsIgnoreCase("Success") || statusresponse.equalsIgnoreCase("Pending"))
+		    {
+		    	
+		    }
+		    else
+		    {
+		    	
+		    }
 	}	
 }
