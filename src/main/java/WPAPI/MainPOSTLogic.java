@@ -33,6 +33,8 @@ public class MainPOSTLogic {
 			
 			for(int i=0; i<GroupIdlist.size(); i++) 		
 			{
+				LogMethods.printOnConsole("\n🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +i+"/"+totalGroups+"\t completed \n");
+
 				
 				if(i%5==0)
 				{
@@ -42,7 +44,7 @@ public class MainPOSTLogic {
 					//Thread.sleep(15000);	
 				}
 				else {
-					LogMethods.printOnConsole("\n🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
+					//LogMethods.printOnConsole("\n🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
 
 					//Thread.sleep(5000);							
 				}
