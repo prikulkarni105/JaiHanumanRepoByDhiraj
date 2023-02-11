@@ -25,6 +25,8 @@ public class MainPOSTLogic {
 				{
 					Thread.sleep(15000);
 				}
+				else {
+					Thread.sleep(5000);				}
 				
 				sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
 				
@@ -115,7 +117,7 @@ public class MainPOSTLogic {
 		    else
 		    {
 		    	System.out.println("**************************Failed to send on     "+ GroupId+"**************************************");
-		    	System.out.println("**************************Response Code     "+ statusresponse+"**************************************");
+		    	System.out.println("**************************Response Code     "+ statusresponse+"  Message -"+messageresponse+"**************************************");
 
 		    }
 	}	

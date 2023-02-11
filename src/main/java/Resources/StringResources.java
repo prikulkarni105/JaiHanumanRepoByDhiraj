@@ -6,7 +6,7 @@ public class StringResources {
 	public static String Baseuri="https://wapiconnect.com";
 	
 	//AccessToken
-	public static String AccessToken="11c91f56d57f6b121c22f6d18c968225";
+	public static String AccessToken="268e550252a9b76e3009f440ca613857";
 	
 	//Instance Ids
 	
