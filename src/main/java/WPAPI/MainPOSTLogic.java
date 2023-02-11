@@ -69,7 +69,21 @@ public class MainPOSTLogic {
 		.then().assertThat().statusCode(200).extract().response().asString();
 		
 		
+		JsonPath js=new JsonPath(mediaresponse);  //used to parsing response
 		
+		String statusresponse = js.getString("status");
+		System.out.println(statusresponse);
+		
+	    String messageresponse =	js.getString("message");
+	    System.out.println(messageresponse);
+	    
+	    if(statusresponse.equalsIgnoreCase("Success") || statusresponse.equalsIgnoreCase("Pending"))
+	    {
+	    }
+	    else
+	    {
+
+	    }
 		
 	}
 	
@@ -95,11 +109,14 @@ public class MainPOSTLogic {
 		    
 		    if(statusresponse.equalsIgnoreCase("Success") || statusresponse.equalsIgnoreCase("Pending"))
 		    {
-		    	
+		    	System.out.println("**************************Successfully Sent to     "+ GroupId+"**************************************");
+   	
 		    }
 		    else
 		    {
-		    	
+		    	System.out.println("**************************Failed to send on     "+ GroupId+"**************************************");
+		    	System.out.println("**************************Response Code     "+ statusresponse+"**************************************");
+
 		    }
 	}	
 }
