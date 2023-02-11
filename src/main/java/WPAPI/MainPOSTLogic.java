@@ -16,6 +16,9 @@ public class MainPOSTLogic {
 		ArrayList<String> GroupIdlist = Utils.readGroupIdFromLocalFile(GroupIdFilename); 
 		int count=1;
 		 
+		System.out.println("**************** Started "+ GroupIdFilename +"***********************" );
+
+		
 		if(Type=="text")			 //here send message if type is text only
 		{
 			
@@ -23,13 +26,25 @@ public class MainPOSTLogic {
 			{
 				if(count%5==0)
 				{
+					System.out.println("**************** Wating For 15 Seconds for "+ GroupIdFilename +"***********************" );
+
 					Thread.sleep(15000);
+					
 				}
 				else {
-					Thread.sleep(5000);				}
+					
+					System.out.println("**************** Wating For 5 Seconds for "+ GroupIdFilename +"***********************" );
+
+					Thread.sleep(5000);			
+					
 				
+				}
+				
+
 				sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
 				
+
+				System.out.println("**************** Finished "+ GroupIdFilename +"***********************" );
 
 			}
 		}	
@@ -94,14 +109,24 @@ public class MainPOSTLogic {
 	{
 			String message=Utils.setMessage();
 			RestAssured.baseURI = StringResources.Baseuri;
-		String textresponse = given().queryParam("group_id", GroupId).queryParam("type", "text")
+	       	String textresponse = given().queryParam("group_id", GroupId).queryParam("type", "text")
 			.queryParam("message", message)
 			.queryParam("instance_id", InstanceId)
 			.queryParam("access_token", StringResources.AccessToken)
 			.when().post("api/sendgroupmsg.php")
 			.then().assertThat().statusCode(200).extract().response().asString();
-			
-			JsonPath js=new JsonPath(textresponse);
+
+
+	       	if(textresponse.contains("error")) {
+	       		
+	       	
+	       	System.out.println("************************ Response ********************");
+	       	    System.out.println(textresponse);
+	       	System.out.println("************************ Response ********************");
+
+	       	}
+		/*	
+		JsonPath js=new JsonPath(textresponse);
 			
 			String statusresponse = js.getString("status");
 			System.out.println(statusresponse);
@@ -119,6 +144,6 @@ public class MainPOSTLogic {
 		    	System.out.println("**************************Failed to send on     "+ GroupId+"**************************************");
 		    	System.out.println("**************************Response Code     "+ statusresponse+"  Message -"+messageresponse+"**************************************");
 
-		    }
+		    }*/
 	}	
 }
