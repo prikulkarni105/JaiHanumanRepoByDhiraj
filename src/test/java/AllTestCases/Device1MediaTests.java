@@ -21,146 +21,146 @@ public class Device1MediaTests {
 	    @Test(enabled = false)  //test==disable
 		public void Device1_FM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_FM_GroupId, StringResources.Device1FM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_FM_GroupId, StringResources.Device1FM);
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualFM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualFM_GroupId, StringResources.Device1DualFM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualFM_GroupId, StringResources.Device1DualFM);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkFM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkFM_GroupId, StringResources.Device1WorkFM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkFM_GroupId, StringResources.Device1WorkFM);
 
 		}
 		
 		@Test(enabled = false)     //test==disable
 		public void Device1_GB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_GB_GroupId, StringResources.Device1GB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_GB_GroupId, StringResources.Device1GB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualGB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualGB_GroupId, StringResources.Device1DualGB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualGB_GroupId, StringResources.Device1DualGB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkGB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkGB_GroupId, StringResources.Device1WorkGB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkGB_GroupId, StringResources.Device1WorkGB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WB_GroupId, StringResources.Device1WB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WB_GroupId, StringResources.Device1WB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualWB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualWB_GroupId, StringResources.Device1DualWB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualWB_GroupId, StringResources.Device1DualWB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkWB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkWB_GroupId, StringResources.Device1WorkWB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkWB_GroupId, StringResources.Device1WorkWB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_AEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_AEROI_GroupId, StringResources.Device1AEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_AEROI_GroupId, StringResources.Device1AEROI);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualAEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualAEROI_GroupId, StringResources.Device1DualAEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualAEROI_GroupId, StringResources.Device1DualAEROI);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkAEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkAEROI_GroupId, StringResources.Device1WorkAEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkAEROI_GroupId, StringResources.Device1WorkAEROI);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device1_AEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_AEROII_GroupId, StringResources.Device1AEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_AEROII_GroupId, StringResources.Device1AEROII);
 	
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualAEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualAEROII_GroupId, StringResources.Device1DualAEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualAEROII_GroupId, StringResources.Device1DualAEROII);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkAEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkAEROII_GroupId, StringResources.Device1WorkAEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkAEROII_GroupId, StringResources.Device1WorkAEROII);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device1_WA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WA_GroupId, StringResources.Device1WA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WA_GroupId, StringResources.Device1WA);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualWA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualWA_GroupId, StringResources.Device1DualWA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualWA_GroupId, StringResources.Device1DualWA);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkWA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkWA_GroupId, StringResources.Device1WorkWA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkWA_GroupId, StringResources.Device1WorkWA);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device1_YO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_YO_GroupId, StringResources.Device1YO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_YO_GroupId, StringResources.Device1YO);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device1_DualYO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_DualYO_GroupId, StringResources.Device1DualYO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_DualYO_GroupId, StringResources.Device1DualYO);
 	
 		}
 		
 		@Test(enabled = true)
 		public void Device1_WorkYO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device1_WorkYO_GroupId, StringResources.Device1WorkYO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device1_WorkYO_GroupId, StringResources.Device1WorkYO);
 
 		}
 	

@@ -6,59 +6,64 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import java.util.ArrayList;
 
+import org.apache.commons.lang3.StringUtils;
+
 import Resources.StringResources;
 
 public class MainPOSTLogic {
 
-	public static void sendMessageToGroups(String Type, String GroupIdFilename, String InstanceId) throws Exception
+	public static void sendMessageToGroups(String testName,String Type, String GroupIdFilename, String InstanceId) throws Exception
 	{
-			
-		ArrayList<String> GroupIdlist = Utils.readGroupIdFromLocalFile(GroupIdFilename); 
-		int count=1;
-		 
-		System.out.println("**************** Started "+ GroupIdFilename +"***********************" );
+		LogMethods.printOnConsole("🔥 "+testName+" Started 🔥");
 
 		
-		if(Type=="text")			 //here send message if type is text only
+		 
+	
+    	String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
+    	String whatsAppAccount= StringUtils.substringBetween(testName, "_", "_") + " WhatsApp";
+		ArrayList<String> GroupIdlist = Utils.readGroupIdFromLocalFile(GroupIdFilename); 
+		int totalGroups=GroupIdlist.size();
+		
+		LogMethods.printOnConsole("🔥 "+testName+" Started 🔥\n" +"with "+totalGroups+" Groups 🤼");
+
+		
+		
+		if(Type=="text")			 
 		{
 			
-			for(int i=0; i<GroupIdlist.size(); i++) 		//for loop used to send message using particular group id
+			for(int i=0; i<GroupIdlist.size(); i++) 		
 			{
-				if(count%5==0)
+				
+				if(i%5==0)
 				{
-					System.out.println("**************** Wating For 15 Seconds for "+ GroupIdFilename +"***********************" );
+					LogMethods.printOnConsole("🔴 Failed to send on - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount);
 
-					Thread.sleep(15000);
 					
+					//Thread.sleep(15000);	
 				}
 				else {
-					
-					System.out.println("**************** Wating For 5 Seconds for "+ GroupIdFilename +"***********************" );
+					LogMethods.printOnConsole("🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount);
 
-					Thread.sleep(5000);			
-					
-				
+					//Thread.sleep(5000);							
 				}
 				
 
-				sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
+				//sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
 				
 
-				System.out.println("**************** Finished "+ GroupIdFilename +"***********************" );
 
 			}
 		}	
-	//here send message if type is media only
 		else if (Type=="media") 
 		{
-			for(int i=0; i<GroupIdlist.size(); i++) 		//for loop used to send message using perticular group id
+			for(int i=0; i<GroupIdlist.size(); i++) 		
 			{
-				if(count%5==0)
+				if(i%5==0)
 				{
 					Thread.sleep(15000);
 				}
 				
-				sendFileMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
+				//sendFileMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
 				
 
 			}
@@ -125,25 +130,6 @@ public class MainPOSTLogic {
 	       	System.out.println("************************ Response ********************");
 
 	       	}
-		/*	
-		JsonPath js=new JsonPath(textresponse);
-			
-			String statusresponse = js.getString("status");
-			System.out.println(statusresponse);
-			
-		    String messageresponse =	js.getString("message");
-		    System.out.println(messageresponse);
-		    
-		    if(statusresponse.equalsIgnoreCase("Success") || statusresponse.equalsIgnoreCase("Pending"))
-		    {
-		    	System.out.println("**************************Successfully Sent to     "+ GroupId+"**************************************");
-   	
-		    }
-		    else
-		    {
-		    	System.out.println("**************************Failed to send on     "+ GroupId+"**************************************");
-		    	System.out.println("**************************Response Code     "+ statusresponse+"  Message -"+messageresponse+"**************************************");
-
-		    }*/
+		
 	}	
 }

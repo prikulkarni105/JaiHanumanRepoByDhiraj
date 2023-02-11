@@ -18,146 +18,146 @@ public class Device5MediaTests {
 	    @Test(enabled = true)  
 		public void Device5_FM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_FM_GroupId, StringResources.Device5FM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_FM_GroupId, StringResources.Device5FM);
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualFM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualFM_GroupId, StringResources.Device5DualFM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualFM_GroupId, StringResources.Device5DualFM);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkFM_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkFM_GroupId, StringResources.Device5WorkFM);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkFM_GroupId, StringResources.Device5WorkFM);
 
 		}
 		
 		@Test(enabled = true)     
 		public void Device5_GB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_GB_GroupId, StringResources.Device5GB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_GB_GroupId, StringResources.Device5GB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualGB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualGB_GroupId, StringResources.Device5DualGB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualGB_GroupId, StringResources.Device5DualGB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkGB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkGB_GroupId, StringResources.Device5WorkGB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkGB_GroupId, StringResources.Device5WorkGB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WB_GroupId, StringResources.Device5WB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WB_GroupId, StringResources.Device5WB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualWB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualWB_GroupId, StringResources.Device5DualWB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualWB_GroupId, StringResources.Device5DualWB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkWB_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkWB_GroupId, StringResources.Device5WorkWB);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkWB_GroupId, StringResources.Device5WorkWB);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_AEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_AEROI_GroupId, StringResources.Device5AEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_AEROI_GroupId, StringResources.Device5AEROI);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualAEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualAEROI_GroupId, StringResources.Device5DualAEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualAEROI_GroupId, StringResources.Device5DualAEROI);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkAEROI_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkAEROI_GroupId, StringResources.Device5WorkAEROI);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkAEROI_GroupId, StringResources.Device5WorkAEROI);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device5_AEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_AEROII_GroupId, StringResources.Device5AEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_AEROII_GroupId, StringResources.Device5AEROII);
 	
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualAEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualAEROII_GroupId, StringResources.Device5DualAEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualAEROII_GroupId, StringResources.Device5DualAEROII);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkAEROII_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkAEROII_GroupId, StringResources.Device5WorkAEROII);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkAEROII_GroupId, StringResources.Device5WorkAEROII);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device5_WA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WA_GroupId, StringResources.Device5WA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WA_GroupId, StringResources.Device5WA);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualWA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualWA_GroupId, StringResources.Device5DualWA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualWA_GroupId, StringResources.Device5DualWA);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkWA_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkWA_GroupId, StringResources.Device5WorkWA);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkWA_GroupId, StringResources.Device5WorkWA);
 
 		}
 	
 		@Test(enabled = true)
 		public void Device5_YO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_YO_GroupId, StringResources.Device5YO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_YO_GroupId, StringResources.Device5YO);
 
 		}
 		
 		@Test(enabled = true)
 		public void Device5_DualYO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_DualYO_GroupId, StringResources.Device5DualYO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_DualYO_GroupId, StringResources.Device5DualYO);
 	
 		}
 		
 		@Test(enabled = true)
 		public void Device5_WorkYO_Media() throws Exception
 		{
-			 MainPOSTLogic.sendMessageToGroups("media", StringResources.Device5_WorkYO_GroupId, StringResources.Device5WorkYO);
+			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"media", StringResources.Device5_WorkYO_GroupId, StringResources.Device5WorkYO);
 
 		}
 
