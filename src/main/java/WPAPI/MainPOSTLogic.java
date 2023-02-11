@@ -36,7 +36,7 @@ public class MainPOSTLogic {
 				
 				if(i%5==0)
 				{
-					LogMethods.printOnConsole("\n🔴 Failed to send on - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
+					//LogMethods.printOnConsole("\n🔴 Failed to send on - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
 
 					
 					//Thread.sleep(15000);	
