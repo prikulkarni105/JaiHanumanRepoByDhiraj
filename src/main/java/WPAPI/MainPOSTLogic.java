@@ -36,13 +36,13 @@ public class MainPOSTLogic {
 				
 				if(i%5==0)
 				{
-					LogMethods.printOnConsole("🔴 Failed to send on - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount);
+					LogMethods.printOnConsole("\n🔴 Failed to send on - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
 
 					
 					//Thread.sleep(15000);	
 				}
 				else {
-					LogMethods.printOnConsole("🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount);
+					LogMethods.printOnConsole("\n🟢 Sent to  - \n" +GroupIdlist.get(i)+"\n"+deviceName+"\t"+whatsAppAccount+"\n");
 
 					//Thread.sleep(5000);							
 				}
