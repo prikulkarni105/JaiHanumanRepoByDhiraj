@@ -25,6 +25,14 @@ public class App
     public static void main( String[] args ) throws Exception
     {
     	
+    	String name="Priyanka Dhiraj Kulkarni";
+    
+    	String firstName=name.substring(0, 8);
+    	System.out.println(firstName);
+    	
+    	String middlename=StringUtils.substringBetween(name, " ", " ");
+    	System.out.println(middlename);
+    	/*
     	String testName="Device1_FM_Test";
     	String deviceName=testName.substring(0, 7);
     	String whatsAppAccount= StringUtils.substringBetween(testName, "_", "_") + " WhatsApp";
@@ -32,7 +40,7 @@ public class App
 		LogMethods.printOnConsole("🔥 Device1_FM_Test Started 🔥");
 		LogMethods.printOnConsole("🔥 "+deviceName+" 🔥");
 		LogMethods.printOnConsole("🔥 "+whatsAppAccount+" 🔥");
-
+*/
     } 
     
     	
