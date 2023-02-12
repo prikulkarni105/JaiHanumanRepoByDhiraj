@@ -9,7 +9,7 @@ import WPAPI.LogMethods;
 import WPAPI.MainPOSTLogic;
 import WPAPI.Utils;
 
-public class Device1TextTests extends LogMethods {
+public class Device1TextTests {
     	
 	    @BeforeSuite
 	    public void executeBeforeAllTests() throws Exception
@@ -166,7 +166,8 @@ public class Device1TextTests extends LogMethods {
 	
 		@AfterSuite
 		public void flush() {
-			extent.flush();
+
+			LogMethods.flush();
 		}
 		
 	

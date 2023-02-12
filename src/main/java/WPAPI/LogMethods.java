@@ -59,5 +59,8 @@ public class LogMethods {
 		}
 		*/
 	}
+	public static void flush() {
+		extent.flush();
+	}
 
 }

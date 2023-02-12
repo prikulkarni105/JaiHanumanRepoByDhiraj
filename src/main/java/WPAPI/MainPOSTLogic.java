@@ -21,7 +21,8 @@ public class MainPOSTLogic
 		int totalGroups=GroupIdlist.size();
 		LogMethods.printOnConsole("🔥 "+testName+" Started 🔥\n" +"with "+totalGroups+" Groups 🤼");
 		LogMethods.CreateExtentTest(testName,deviceName,whatsAppAccount);
-		
+		LogMethods.printOnConsole("🔥 "+testName+" Credted in Reports 🔥\n" +"with "+totalGroups+" Groups 🤼");
+
 		
 		
 		if(Type=="text")			 
