@@ -14,6 +14,7 @@ public class LogMethods {
 	
 	
 	public static void CreateExtentTest(String testName, String deviceName, String WhatsAppAccount) {
+		extent.attachReporter(spark);
 		test=extent.createTest(testName).assignCategory(deviceName);
 	}
 	public static void printOnConsole(String message) {
@@ -65,4 +66,19 @@ public class LogMethods {
 		extent.flush();
 	}
 
+	
+	public static void DemoMethod(ExtentReports extent,ExtentTest test) {
+		
+		for(int i=0;i<10;i++) {
+			if(i%5==0) {
+			test.createNode("Number"+i).log(Status.FAIL, "Failed to Send").fail(""+i);
+			}
+			else {
+				test.createNode("Number"+i).log(Status.PASS, "Succefully sent").pass(""+i);
+
+			}
+			
+		}
+	}
+	
 }

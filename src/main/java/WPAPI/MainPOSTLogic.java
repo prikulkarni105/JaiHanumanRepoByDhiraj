@@ -33,7 +33,7 @@ public class MainPOSTLogic
 				//String textResponse=sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
 				String textResponse="Demo";
 
-				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, whatsAppAccount, textResponse, GroupIdlist.get(i).toString());
+				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, ""+totalGroups, textResponse, GroupIdlist.get(i).toString());
 			}
 			LogMethods.flush();
 		
@@ -44,7 +44,7 @@ public class MainPOSTLogic
 			{
 				LogMethods.SleepLogic(i, deviceName, whatsAppAccount, ""+totalGroups);	
 				String mediaResponse=sendFileMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
-				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, whatsAppAccount, mediaResponse, GroupIdlist.get(i).toString());
+				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, ""+totalGroups, mediaResponse, GroupIdlist.get(i).toString());
 			}
 		}
 		
