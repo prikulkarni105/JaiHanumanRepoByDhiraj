@@ -35,6 +35,8 @@ public class MainPOSTLogic
 
 				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, whatsAppAccount, textResponse, GroupIdlist.get(i).toString());
 			}
+			LogMethods.flush();
+		
 		}	
 		else if (Type=="media") 
 		{
