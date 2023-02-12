@@ -71,6 +71,7 @@ public class Utils {
 			}
 		}
 		
+		workbook.close();
 		return groupIds;
 	}
 	
