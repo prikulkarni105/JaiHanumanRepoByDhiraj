@@ -38,10 +38,12 @@ public class LogMethods {
 		
 		if(completedCount%5==0) {
 			test.createNode(groupID).log(Status.FAIL, "Failed to Send").fail(response);
+			LogMethods.printOnConsole("\n🔴 Failed to send on   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
 
 		}
 		else {
 			test.createNode(groupID).log(Status.PASS, "Successfully Sent").pass(response);
+			LogMethods.printOnConsole("\n🟢 Suceesfully sent to   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
 
 		}
 		
