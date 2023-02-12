@@ -1,13 +1,15 @@
 package AllTestCases;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import Resources.StringResources;
+import WPAPI.LogMethods;
 import WPAPI.MainPOSTLogic;
 import WPAPI.Utils;
 
-public class Device1TextTests {
+public class Device1TextTests extends LogMethods {
     	
 	    @BeforeSuite
 	    public void executeBeforeAllTests() throws Exception
@@ -162,7 +164,10 @@ public class Device1TextTests {
 
 		}
 	
-		
+		@AfterSuite
+		public void flush() {
+			extent.flush();
+		}
 		
 	
 }
