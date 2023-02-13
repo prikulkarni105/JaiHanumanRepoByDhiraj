@@ -37,6 +37,7 @@ public class LogMethods {
 	public static void ResponseLogic(int completedCount,String deviceName, String whatsAppAccount,String totalGroups,String response,String groupID) throws Exception
 	{
 		
+		/*
 		if(completedCount%5==0) {
 			test.createNode(groupID).log(Status.FAIL, "Failed to Send").fail(response);
 			LogMethods.printOnConsole("\n🔴 Failed to send on   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
@@ -47,9 +48,9 @@ public class LogMethods {
 			LogMethods.printOnConsole("\n🟢 Suceesfully sent to   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
 
 		}
+		*/
 		
 		
-		/*
 		if(response.contains("error")) {
 			LogMethods.printOnConsole("\n🔴 Failed to send on   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
 			test.createNode(groupID).log(Status.FAIL, "Failed to Send").fail(response);
@@ -60,7 +61,7 @@ public class LogMethods {
 			test.createNode(groupID).log(Status.PASS, "Successfully Sent").pass(response);
 
 		}
-		*/
+		
 	}
 	public static void flush() {
 		extent.flush();

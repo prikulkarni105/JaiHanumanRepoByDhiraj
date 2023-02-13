@@ -29,13 +29,12 @@ public class MainPOSTLogic
 		{	
 			for(int i=0; i<GroupIdlist.size(); i++) 		
 			{
-				//LogMethods.SleepLogic(i, deviceName, whatsAppAccount, ""+totalGroups);
-				//String textResponse=sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
-				String textResponse="Demo";
+				LogMethods.SleepLogic(i, deviceName, whatsAppAccount, ""+totalGroups);
+				String textResponse=sendTextMessageToGroups(GroupIdlist.get(i).toString(), InstanceId);
+				//String textResponse="Demo";
 
 				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, ""+totalGroups, textResponse, GroupIdlist.get(i).toString());
 			}
-			//LogMethods.flush();
 		
 		}	
 		else if (Type=="media") 
