@@ -56,6 +56,11 @@ public class LogMethods {
 			test.createNode(groupID).log(Status.FAIL, "Failed to Send").fail(response);
 		
 		}
+		else if(response.contains("null")) {
+			LogMethods.printOnConsole("\n🔴 API RESPONSE CONTAINS NULL   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
+			test.createNode(groupID).log(Status.FAIL, "API REPSONSE NULL").fail(response);
+		
+		}
 		else {
 			LogMethods.printOnConsole("\n🟢 Suceesfully sent to   - \n"+groupID+"\n"+deviceName+"\t"+whatsAppAccount+"\n" +completedCount+"/"+totalGroups+"\t completed \n");
 			test.createNode(groupID).log(Status.PASS, "Successfully Sent").pass(response);
