@@ -30,13 +30,11 @@ public class MainPOSTLogic
     	
        	
        	
-       	System.out.println("\n********************* "+testName+"**********************\n");
        	
        	
-       	System.out.println("\n********************* "+textresponse+"**********************\n");
+       	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	
-       	System.out.println("\n********************* "+testName+"**********************\n");
 
 		/*String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
     	String whatsAppAccount= StringUtils.substringBetween(testName, "_", "_") + " WhatsApp";
