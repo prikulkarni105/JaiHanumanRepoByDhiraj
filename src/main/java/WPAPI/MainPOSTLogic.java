@@ -15,7 +15,24 @@ public class MainPOSTLogic
 
 	public static void sendMessageToGroups(String testName,String Type, String GroupIdFilename, String InstanceId) throws Exception
 	{
-    	String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
+		
+		String message="Demo From "+testName;
+		RestAssured.baseURI = StringResources.Baseuri;
+       	String textresponse = given().queryParam("group_id", "120363030286527679@g.us").queryParam("type", "text")
+		.queryParam("message", message)
+		.queryParam("instance_id", InstanceId)
+		.queryParam("access_token", StringResources.AccessToken)
+		.when().post("api/sendgroupmsg.php")
+		.then().assertThat().statusCode(200).extract().response().asString();
+    	
+       	System.out.println("\n********************* "+testName+"**********************\n");
+       	
+       	System.out.println("\n********************* "+textresponse+"**********************\n");
+
+       	
+       	System.out.println("\n********************* "+testName+"**********************\n");
+
+		/*String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
     	String whatsAppAccount= StringUtils.substringBetween(testName, "_", "_") + " WhatsApp";
 		ArrayList<String> GroupIdlist = Utils.readGroupIdFromLocalFile(GroupIdFilename); 
 		int totalGroups=GroupIdlist.size();
@@ -46,7 +63,7 @@ public class MainPOSTLogic
 				LogMethods.ResponseLogic(i, deviceName, whatsAppAccount, ""+totalGroups, mediaResponse, GroupIdlist.get(i).toString());
 			}
 		}
-		
+		*/
 	}
 
 	
