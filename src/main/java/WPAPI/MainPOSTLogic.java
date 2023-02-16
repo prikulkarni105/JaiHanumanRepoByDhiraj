@@ -7,6 +7,7 @@ import static io.restassured.RestAssured.*;
 import java.util.ArrayList;
 
 import org.apache.commons.lang3.StringUtils;
+import org.testng.Assert;
 
 import Resources.StringResources;
 
@@ -16,6 +17,8 @@ public class MainPOSTLogic
 	public static void sendMessageToGroups(String testName,String Type, String GroupIdFilename, String InstanceId) throws Exception
 	{
 		
+       	System.out.println("\n********************* "+testName+" Started **********************\n");
+
 		String message="Demo From "+testName;
 		RestAssured.baseURI = StringResources.Baseuri;
        	String textresponse = given().queryParam("group_id", "120363030286527679@g.us").queryParam("type", "text")
@@ -25,7 +28,10 @@ public class MainPOSTLogic
 		.when().post("api/sendgroupmsg.php")
 		.then().assertThat().statusCode(200).extract().response().asString();
     	
+       	
+       	
        	System.out.println("\n********************* "+testName+"**********************\n");
+       	
        	
        	System.out.println("\n********************* "+textresponse+"**********************\n");
 
