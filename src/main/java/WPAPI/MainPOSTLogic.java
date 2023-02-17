@@ -29,10 +29,15 @@ public class MainPOSTLogic
 		.then().assertThat().statusCode(200).extract().response().asString();
     	
        	
+       	if(textresponse.contains("null")) {
+       		Assert.assertEquals("Not Null", "Null");
+       	}
+       	else {
+           	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
+
+       	}
        	
        	
-       	
-       	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	
 
