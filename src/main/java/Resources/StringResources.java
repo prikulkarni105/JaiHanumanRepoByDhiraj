@@ -49,39 +49,39 @@ public class StringResources {
 	
 	//Device2
 	
-		public static String Device2FM="63DE0C3404066";
-		public static String Device2DualFM="63DE0C5F438DC";
-		public static String Device2WorkFM="63DE0C87564B6";
+		public static String Device2FM="63EF38B495DD3";
+		public static String Device2DualFM="63EF38DA25A8C";
+		public static String Device2WorkFM="63EF3900E872B";
 
 		
-		public static String Device2GB="63DE0CA7B0CF7";
-		public static String Device2DualGB="63DE0CF0D7834";
-		public static String Device2WorkGB="63DE0D0BED53B";
+		public static String Device2GB="63EF395A15007";
+		public static String Device2DualGB="63EF397B3DDB8";
+		public static String Device2WorkGB="63EF39964815D";
 		
 		
-		public static String Device2WB="63DE0D2A91362";
-		public static String Device2DualWB="63DE0D963C2F3";
-		public static String Device2WorkWB="63DE0DB3049DA";
-		
-
-		public static String Device2AEROI="63DE0DCF21D93";
-		public static String Device2DualAEROI="63DE0DEA54030";
-		public static String Device2WorkAEROI="63DE0E0700CCC";
-		
-		
-		public static String Device2AEROII="63DE0E2369433";
-		public static String Device2DualAEROII="63DE0E3F71FB9";
-		public static String Device2WorkAEROII="63DE0E5AB1878";
+		public static String Device2WB="63EF3AA05074E";
+		public static String Device2DualWB="63EF3B4C622CF";
+		public static String Device2WorkWB="63EF3B6F4D409";
 		
 
-		public static String Device2WA="63DE0E74B9532";
-		public static String Device2DualWA="63DE0E8F6FEED";
-		public static String Device2WorkWA="63DE0EA84A74A";
+		public static String Device2AEROI="63EF3B94C594B";
+		public static String Device2DualAEROI="63EF3BC1904A1";
+		public static String Device2WorkAEROI="63EF3C3F78102";
+		
+		
+		public static String Device2AEROII="63EF3C6226B13";
+		public static String Device2DualAEROII="63EF3C7B4A9E7";
+		public static String Device2WorkAEROII="63EF3CCB96A1B";
 		
 
-		public static String Device2YO="63DE0ED5392BA";
-		public static String Device2DualYO="63DE0EF16084B";
-		public static String Device2WorkYO="63DE0F111D47A";
+		public static String Device2WA="63EF3CEABD6FE";
+		public static String Device2DualWA="63EF3D00AF966";
+		public static String Device2WorkWA="63EF3D66D5912";
+		
+
+		public static String Device2YO="63EF3D8AA6557";
+		public static String Device2DualYO="63EF3E0922EB8";
+		public static String Device2WorkYO="63EF3E2DCFC8C";
 	
 
 //Device3
