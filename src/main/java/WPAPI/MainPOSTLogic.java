@@ -20,9 +20,7 @@ public class MainPOSTLogic
 		
        	System.out.println("\n********************* "+testName+" Started **********************\n");
 
-      for(int i=1;i<4;i++) {
            	
-       		System.out.println("\n********************* "+testName+" Started for "+i+" th time **********************\n");
 
 		String message="Demo From "+testName;
 		RestAssured.baseURI = StringResources.Baseuri;
@@ -35,6 +33,7 @@ public class MainPOSTLogic
     	
        	
        	if(textresponse.contains("null")) {
+
        		Assert.assertEquals("Failed", textresponse);
            	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
@@ -43,8 +42,7 @@ public class MainPOSTLogic
            	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	}
-       	Thread.sleep(15000);
-       	}
+       	
        	
 
 		/*String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
