@@ -35,7 +35,7 @@ public class MainPOSTLogic
     	
        	
        	if(textresponse.contains("null")) {
-       		Assert.assertEquals("Not Null", "Null");
+       		Assert.assertEquals("Failed", textresponse);
            	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	}
