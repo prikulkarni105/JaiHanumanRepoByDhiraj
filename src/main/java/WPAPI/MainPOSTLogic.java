@@ -16,8 +16,13 @@ public class MainPOSTLogic
 
 	public static void sendMessageToGroups(String testName,String Type, String GroupIdFilename, String InstanceId) throws Exception
 	{
+
 		
        	System.out.println("\n********************* "+testName+" Started **********************\n");
+
+       	int i=0;
+       	while(i<3) {
+           	System.out.println("\n********************* "+testName+" Started for "+i+" th time **********************\n");
 
 		String message="Demo From "+testName;
 		RestAssured.baseURI = StringResources.Baseuri;
@@ -38,9 +43,9 @@ public class MainPOSTLogic
            	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	}
-       	
-       	
-
+       	i++;
+       	Thread.sleep(15000);
+       	}
        	
 
 		/*String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
