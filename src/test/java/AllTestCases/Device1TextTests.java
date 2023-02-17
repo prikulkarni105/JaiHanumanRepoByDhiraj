@@ -38,7 +38,7 @@ public class Device1TextTests {
 
 		}
 		
-		@Test(enabled = false)     //test==disable
+		@Test(enabled = true)     //test==disable
 		public void Device1_GB_Text() throws Exception
 		{
 			 MainPOSTLogic.sendMessageToGroups(new Object(){}.getClass().getEnclosingMethod().getName(),"text", StringResources.Device1_GB_GroupId, StringResources.Device1GB);
