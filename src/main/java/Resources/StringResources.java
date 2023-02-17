@@ -86,112 +86,112 @@ public class StringResources {
 
 //Device3
 		
-		public static String Device3FM="63DE0F5D5C53F";
-		public static String Device3DualFM="63DE0F7486899";
-		public static String Device3WorkFM="63DE0F913B3F6";
+		public static String Device3FM="63EF5B356A55D";
+		public static String Device3DualFM="63EF5B89501D9";
+		public static String Device3WorkFM="63EF5BDFEF681";
 
 		
-		public static String Device3GB="63DE0FAF887B4";
-		public static String Device3DualGB="63DE0FC685118";
-		public static String Device3WorkGB="63DE0FE32A574";
+		public static String Device3GB="63EF5C10860EE";
+		public static String Device3DualGB="63EF5C366A1C2";
+		public static String Device3WorkGB="63EF5C550C0C3";
 		
 		
-		public static String Device3WB="63DE101336EC6";
-		public static String Device3DualWB="63DE102844FB9";
-		public static String Device3WorkWB="63DE104680297";
+		public static String Device3WB="63EF5C924C597";
+		public static String Device3DualWB="63EF5CC3B8804";
+		public static String Device3WorkWB="63EF5CE2E2108";
 	
 
-		public static String Device3AEROI="63DE1077455CE";
-		public static String Device3DualAEROI="63DE1091550E5";
-		public static String Device3WorkAEROI="63DE10AF4350D";
+		public static String Device3AEROI="63EF5D04DA805";
+		public static String Device3DualAEROI="63EF5D1E07357";
+		public static String Device3WorkAEROI="63EF5D387E520";
 		
 		
-		public static String Device3AEROII="63DE10CEA1391";
-		public static String Device3DualAEROII="63DE1126A8730";
-		public static String Device3WorkAEROII="63DE146407990";
-		
-
-		public static String Device3WA="63DE148D0C17E";
-		public static String Device3DualWA="63DE14AE86E0B";
-		public static String Device3WorkWA="63DE14E5B82EC";
+		public static String Device3AEROII="63EF5D69B676D";
+		public static String Device3DualAEROII="63EF5D84BD807";
+		public static String Device3WorkAEROII="63EF5DA801EB3";
 		
 
-		public static String Device3YO="63DE14FDDC13B";
-		public static String Device3DualYO="63DE1523E1DAA";
-		public static String Device3WorkYO="63DE154D176DB";
+		public static String Device3WA="63EF5DC4092DF";
+		public static String Device3DualWA="63EF5E869EFCD";
+		public static String Device3WorkWA="63EF5EA7E2053";
+		
+
+		public static String Device3YO="63EF5EFC46F93";
+		public static String Device3DualYO="63EF5F7472FB8";
+		public static String Device3WorkYO="63EF5F8579F2C";
 
 		
 //Device4
 		
-		public static String Device4FM="63DE15D9E2343";
-		public static String Device4DualFM="63DE15F958675";
-		public static String Device4WorkFM="63DE1621B7D4C";
+		public static String Device4FM="63EF5FED3FC73";
+		public static String Device4DualFM="63EF603C629D0";
+		public static String Device4WorkFM="63EF60601B531";
 
 		
-		public static String Device4GB="63DE163C4A7D4";
-		public static String Device4DualGB="63DE16546F743";
-		public static String Device4WorkGB="63DE16703F2B4";
+		public static String Device4GB="63EF6076E74FA";
+		public static String Device4DualGB="63EF609F74E36";
+		public static String Device4WorkGB="63EF60D64E2A3";
 		
 		
-		public static String Device4WB="63DE168956593";
-		public static String Device4DualWB="63DE16A6AAD18";
-		public static String Device4WorkWB="63DE16BC21444";
-		
-
-		public static String Device4AEROI="63DE16F11B2B4";
-		public static String Device4DualAEROI="63DE171F5FF39";
-		public static String Device4WorkAEROI="63DE173C637DA";
-		
-		
-		public static String Device4AEROII="63DE175B6925F";
-		public static String Device4DualAEROII="63DE177AE074E";
-		public static String Device4WorkAEROII="63DE17999878A";
+		public static String Device4WB="63EF60ED411BE";
+		public static String Device4DualWB="63EF614E5962B";
+		public static String Device4WorkWB="63EF61BD82409";
 		
 
-		public static String Device4WA="63DE17EC0820A";
-		public static String Device4DualWA="63DE18062F6CA";
-		public static String Device4WorkWA="63DE1827E1909";
+		public static String Device4AEROI="63EF61D6DDC8F";
+		public static String Device4DualAEROI="63EF61FA7FD51";
+		public static String Device4WorkAEROI="63EF621FC77DF";
+		
+		
+		public static String Device4AEROII="63EF6256B4561";
+		public static String Device4DualAEROII="63EF62B231CA9";
+		public static String Device4WorkAEROII="63EF62CCDC04D";
 		
 
-		public static String Device4YO="63DE185A1BC5A";
-		public static String Device4DualYO="63DE18723322C";
-		public static String Device4WorkYO="63DE189B486E4";
+		public static String Device4WA="63EF63738289A";
+		public static String Device4DualWA="63EF638A6F68B";
+		public static String Device4WorkWA="63EF63BB6D884";
+		
+
+		public static String Device4YO="63EF63F8A769D";
+		public static String Device4DualYO="63EF64140BD83";
+		public static String Device4WorkYO="63EF64E089ABE";
 		
 //Device5
 		
-		public static String Device5FM="63DE18D3BA0CE";
-		public static String Device5DualFM="63DE18EB24EC0";
-		public static String Device5WorkFM="63DE191769149";
+		public static String Device5FM="63EF65A6E3195";
+		public static String Device5DualFM="63EF65C932EAC";
+		public static String Device5WorkFM="63EF65E49B2B2";
 
 		
-		public static String Device5GB="63DE194284528";
-		public static String Device5DualGB="63DE195E498B4";
-		public static String Device5WorkGB="63DE1982DCF11";
+		public static String Device5GB="63EF65FB0EFDD";
+		public static String Device5DualGB="63EF6612C0E96";
+		public static String Device5WorkGB="63EF662A6ED26";
 		
 		
-		public static String Device5WB="63DE199D6C332";
-		public static String Device5DualWB="63DE19BCAE33E";
-		public static String Device5WorkWB="63DE19F6DC405";
-		
-
-		public static String Device5AEROI="63DE1A11BBF94";
-		public static String Device5DualAEROI="63DE1A3D9B849";
-		public static String Device5WorkAEROI="63DE1A56C97EE";
-		
-		
-		public static String Device5AEROII="63DE1A8BC9EA9";
-		public static String Device5DualAEROII="63DE1AAA7607C";
-		public static String Device5WorkAEROII="63DE1ACEE2907";
+		public static String Device5WB="63EF665623907";
+		public static String Device5DualWB="63EF666AD7801";
+		public static String Device5WorkWB="63EF669DAEA79";
 		
 
-		public static String Device5WA="63DE1AE388CD7";
-		public static String Device5DualWA="63DE2598B05B6";
-		public static String Device5WorkWA="63DE25B0EEDFC";
+		public static String Device5AEROI="63EF66BC2D229";
+		public static String Device5DualAEROI="63EF66D9D7723";
+		public static String Device5WorkAEROI="63EF66E95A81B";
+		
+		
+		public static String Device5AEROII="63EF671568FDB";
+		public static String Device5DualAEROII="63EF673369E11";
+		public static String Device5WorkAEROII="63EF6751BE492";
 		
 
-		public static String Device5YO="63DE25D12A63B";
-		public static String Device5DualYO="63DE25E8CA298";
-		public static String Device5WorkYO="63DE25FFDE93D";
+		public static String Device5WA="63EF6777BC02E";
+		public static String Device5DualWA="63EF678D3AB3C";
+		public static String Device5WorkWA="63EF67A8D79A3";
+		
+
+		public static String Device5YO="63EF67FBC1F51";
+		public static String Device5DualYO="63EF6821CF750";
+		public static String Device5WorkYO="63EF683C04C82";
 		
 
 //Device6
