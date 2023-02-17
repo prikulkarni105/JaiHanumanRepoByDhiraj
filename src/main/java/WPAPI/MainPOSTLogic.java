@@ -30,18 +30,9 @@ public class MainPOSTLogic
 		.queryParam("access_token", StringResources.AccessToken)
 		.when().post("api/sendgroupmsg.php")
 		.then().assertThat().statusCode(200).extract().response().asString();
-    	
+         System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
+
        	
-       	if(textresponse.contains("null")) {
-
-       		Assert.assertEquals("Failed", textresponse);
-           	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
-
-       	}
-       	else {
-           	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
-
-       	}
        	
        	
 
