@@ -20,9 +20,9 @@ public class MainPOSTLogic
 		
        	System.out.println("\n********************* "+testName+" Started **********************\n");
 
-       	int i=0;
-       	while(i<3) {
-           	System.out.println("\n********************* "+testName+" Started for "+i+" th time **********************\n");
+      for(int i=1;i<4;i++) {
+           	
+       		System.out.println("\n********************* "+testName+" Started for "+i+" th time **********************\n");
 
 		String message="Demo From "+testName;
 		RestAssured.baseURI = StringResources.Baseuri;
@@ -43,7 +43,6 @@ public class MainPOSTLogic
            	System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
 
        	}
-       	i++;
        	Thread.sleep(15000);
        	}
        	
