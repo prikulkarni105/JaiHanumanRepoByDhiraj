@@ -1,29 +1,19 @@
-package AllTestCases;
+package WPAPI;
 
-import org.testng.annotations.Test;
-
-import com.github.siyoon210.ogparser4j.OgParser;
-
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import org.testng.annotations.AfterSuite;
+import com.github.siyoon210.ogparser4j.OgParser;
 
 
-import WPAPI.LogMethods;
-
-public class demoTests {
-
+public class GroupsManiaLogic {
 	
-	
-	@Test
-	public void Test1() {
+	public static void logic() {
 		
-		System.out.println("******STARTED PROCESSING*******");
-
-
+		
 		String link = null;
     	String category;
     	String language;
@@ -95,11 +85,10 @@ public class demoTests {
     	
     	}  
     		
+    		 
+    		
 
-    	
-    	
-		System.out.println("****** PROCESS ENDED*******");
-
+		
 	}
-	
+
 }
