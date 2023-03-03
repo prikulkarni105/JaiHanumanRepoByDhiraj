@@ -12,14 +12,15 @@ import WPAPI.LogMethods;
 
 public class demoTests {
 
-	public static ExtentReports extent= new ExtentReports();
-	public static ExtentSparkReporter spark=new ExtentSparkReporter("report.html");
-	public static ExtentTest test;
+	
 	
 	@Test
 	public void Test1() {
 		
-		GroupsManiaLogic.logic();
+		System.out.println("******STARTED PROCESSING*******");
+			GroupsManiaLogic.logic();
+		System.out.println("****** PROCESS ENDED*******");
+
 	}
 	
 }
