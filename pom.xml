@@ -94,6 +94,22 @@
 </dependency>
 
 
+<!-- https://mvnrepository.com/artifact/com.github.siyoon210/ogparser4j -->
+<dependency>
+    <groupId>com.github.siyoon210</groupId>
+    <artifactId>ogparser4j</artifactId>
+    <version>1.0.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.32</version>
+</dependency>
+
+
+
 
   </dependencies>
 
