@@ -38,13 +38,15 @@ public class demoTests {
     		"jdbc:mysql://89.117.53.127:3306/groupsmania","GroupsMania","Ads@40000");  
     		//here sonoo is database name, root is username and password  
     		Statement stmt=con.createStatement();  
-    		ResultSet rs=stmt.executeQuery("SELECT *  FROM groups");
+    		ResultSet rs=stmt.executeQuery("SELECT *  FROM groups where id>9848");
 
     		int i=0;
     		int valid_groups=0;
     		while(rs.next())  
         	
     		{
+    			try {
+
     			i++;
     			link=rs.getString(5);
     			category=rs.getNString(7);
@@ -61,28 +63,24 @@ public class demoTests {
         		if(!image.contains("static.whatsapp.net")) {        		
     			    
     			    //Query To Insert into Updated DB
-        		
-        			
-        			try {
         			
     	    		Statement update_statement=con.createStatement();  
     	    		int rs_update=update_statement.executeUpdate("INSERT INTO updated_groups(link, name, category, country, language, image) VALUES ('"+link+"','"+name+"','"+category+"','"+country+"','"+language+"','"+image+"')");
 
     	    		valid_groups++;
-        			}
-        			catch(Exception e) {
-        	    		System.out.println(e.getMessage());
-        	    		continue;
-        			}
         			
-        		
-        		}
+             		}
     			System.out.println("****************************************");
     			System.out.println("Completed " + i +"  Of " +count +"  Group Links");
     			System.out.println("Valid Groups " + valid_groups);
 
     			System.out.println("****************************************");
 
+    			}
+    			catch(Exception e) {
+    	    		System.out.println(e.getMessage());
+    	    		continue;
+    			}
         	}
 			con.close();  
 
