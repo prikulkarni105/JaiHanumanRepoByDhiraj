@@ -4,9 +4,7 @@
   <test thread-count="21" parallel="false" name="Test">
     <classes>
       
-            <class name="AllTestCases.demoTests"/>
 
-                  <!-- 
 
       <class name="AllTestCases.Device1TextTests"/>
       <class name="AllTestCases.Device2TextTests"/>
@@ -15,7 +13,11 @@
       <class name="AllTestCases.Device4TextTests"/>
       <class name="AllTestCases.Device5TextTests"/>
 
+                  <!-- 
+
       <class name="AllTestCases.Device6TextTests"/>
+                  <class name="AllTestCases.demoTests"/>
+
 		-->
     </classes>
   </test> <!-- Test -->
