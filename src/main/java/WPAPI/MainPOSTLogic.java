@@ -5,6 +5,8 @@ import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -29,11 +31,29 @@ public class MainPOSTLogic
        	URL url=new URL("https://wapiconnect.com/api/sendgroupmsg.php?group_id=120363030286527679@g.us&type=text&message="+message+"&instance_id="+InstanceId+"&access_token="+StringResources.AccessToken);  
       System.out.println(url);
        	
-       	HttpURLConnection huc=(HttpURLConnection)url.openConnection(); 
-       	for(int i=1;i<=8;i++){  
+       	HttpURLConnection conn=(HttpURLConnection)url.openConnection(); 
+        System.out.println(conn.getResponseCode());
+        
+        BufferedReader br = null;
+        if (conn.getResponseCode() == 200) {
+            br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String strCurrentLine;
+                while ((strCurrentLine = br.readLine()) != null) {
+                       System.out.println(strCurrentLine);
+                }
+        } else {
+            br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+            String strCurrentLine;
+                while ((strCurrentLine = br.readLine()) != null) {
+                       System.out.println(strCurrentLine);
+                }
+        }
+
+       	
+       	/*for(int i=1;i<=8;i++){  
        		System.out.println(huc.getHeaderFieldKey(i)+" = "+huc.getHeaderField(i));  
-       		}  
-       		huc.disconnect();   
+       		}  */
+        conn.disconnect();   
        	
        	
        	/*
