@@ -4,6 +4,9 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 
 import org.apache.commons.lang3.StringUtils;
@@ -20,14 +23,19 @@ public class MainPOSTLogic
 		
        	System.out.println("\n********************* "+testName+" Started **********************\n");
 
-       
-       	
-       	
-       	
-       	
-       	
-       	
 		String message="Demo From "+testName;
+
+       	
+       	URL url=new URL("https://wapiconnect.com/api/sendgroupmsg.php?group_id=120363030286527679@g.us&type=text&message="+message+"&instance_id="+InstanceId+"&access_token="+StringResources.AccessToken);  
+       	HttpURLConnection huc=(HttpURLConnection)url.openConnection(); 
+       	for(int i=1;i<=8;i++){  
+       		System.out.println(huc.getHeaderFieldKey(i)+" = "+huc.getHeaderField(i));  
+       		}  
+       		huc.disconnect();   
+       	
+       	
+       	/*
+       	
 		RestAssured.baseURI = StringResources.Baseuri;
        	String textresponse = given().queryParam("group_id", "120363030286527679@g.us").queryParam("type", "text")
 		.queryParam("message", message)
