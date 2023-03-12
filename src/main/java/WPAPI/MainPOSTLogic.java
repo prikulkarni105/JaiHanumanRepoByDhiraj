@@ -27,6 +27,8 @@ public class MainPOSTLogic
 
        	
        	URL url=new URL("https://wapiconnect.com/api/sendgroupmsg.php?group_id=120363030286527679@g.us&type=text&message="+message+"&instance_id="+InstanceId+"&access_token="+StringResources.AccessToken);  
+      System.out.println(url);
+       	
        	HttpURLConnection huc=(HttpURLConnection)url.openConnection(); 
        	for(int i=1;i<=8;i++){  
        		System.out.println(huc.getHeaderFieldKey(i)+" = "+huc.getHeaderField(i));  
