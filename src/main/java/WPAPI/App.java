@@ -7,6 +7,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import org.apache.http.Header;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
+
 import com.github.siyoon210.ogparser4j.OgParser;
 
 
@@ -18,6 +24,22 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
+    	
+    	
+    	
+    	
+    	HttpClient client = HttpClientBuilder.create().build();
+    	HttpGet request = new HttpGet("");
+    	HttpResponse response = client.execute(request);
+    	
+    	//get all headers		
+    	Header[] headers = response.getAllHeaders();
+    	for (Header header : headers) {
+    		System.out.println("Key : " + header.getName() 
+    		      + " ,Value : " + header.getValue());
+    	}
+    	
+    	/*
     	String link = null;
     	String category;
     	String language;
@@ -89,7 +111,7 @@ public class App
     	
     	}  
     		
-    		 
+    		 */
     		
 		}  
     	
