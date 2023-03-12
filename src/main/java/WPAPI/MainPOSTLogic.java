@@ -23,7 +23,7 @@ public class MainPOSTLogic
 		
        	System.out.println("\n********************* "+testName+" Started **********************\n");
 
-		String message="Demo From "+testName;
+		String message=testName;
 
        	
        	URL url=new URL("https://wapiconnect.com/api/sendgroupmsg.php?group_id=120363030286527679@g.us&type=text&message="+message+"&instance_id="+InstanceId+"&access_token="+StringResources.AccessToken);  
