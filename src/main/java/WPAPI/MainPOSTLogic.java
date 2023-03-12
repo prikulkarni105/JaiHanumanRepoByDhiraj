@@ -26,7 +26,7 @@ public class MainPOSTLogic
        	
        	
        	
-       	/*
+       	
 		String message="Demo From "+testName;
 		RestAssured.baseURI = StringResources.Baseuri;
        	String textresponse = given().queryParam("group_id", "120363030286527679@g.us").queryParam("type", "text")
@@ -36,7 +36,7 @@ public class MainPOSTLogic
 		.when().post("api/sendgroupmsg.php")
 		.then().assertThat().statusCode(200).extract().response().asString();
          System.out.println("\n********************* "+testName+"\n\n"+textresponse+"\n\n**********************\n");
-*/
+
 		/*String deviceName=testName.substring(0, 7);   //DeviceName Extracted From TestName
     	String whatsAppAccount= StringUtils.substringBetween(testName, "_", "_") + " WhatsApp";
 		ArrayList<String> GroupIdlist = Utils.readGroupIdFromLocalFile(GroupIdFilename); 
