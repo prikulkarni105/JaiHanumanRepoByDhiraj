@@ -5,7 +5,6 @@
     <classes>
       
 
-           <!-- 
 
 
       <class name="AllTestCases.Device1TextTests"/>
@@ -16,9 +15,10 @@
       <class name="AllTestCases.Device6TextTests"/>
       
      
-      		-->
+           <!-- 
 
          <class name="AllTestCases.demoTests"/>
+      		-->
 
     </classes>
   </test> <!-- Test -->
